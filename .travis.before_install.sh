@@ -4,8 +4,11 @@
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com AEF0CF8E
 
 # Add the repo
-#TODO make this match the branch
+# TODO make this match the branch
 sudo add-apt-repository -y "deb http://ubuntu.adiscon.com/v7-stable precise/"
 
 sudo apt-get update
 sudo apt-get install libestr0 libestr-dev libjson0-dev uuid-dev python-docutils
+
+# Create our makefile and configure
+./autogen.sh
